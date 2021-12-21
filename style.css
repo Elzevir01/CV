@@ -1,0 +1,185 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{  
+    background:#000;
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    padding:5px;
+}
+.contenedor{
+width:100%;
+min-width: 376px; 
+display:grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(10, auto);
+grid-template-areas: "sidebar tope tope tope tope" 
+                     "sidebar infop infop infop infop" 
+                     "sidebar b2 b2 b2 b2" 
+                     "sidebar t2 t2 t2 t2" 
+                     "sidebar iA iA iA iA" 
+                     "sidebar t3 t3 t3 t3"
+                     "sidebar iB iB iB iB"
+                     "sidebar ex ex ex ex"
+                     "sidebar ic ic ic ic"
+                     "footer footer footer footer footer";
+}
+.contenedor, .sidebar, .infop, .titulo, .footer{
+    background:#2c343f;
+    color:#fff;
+}
+.tope, .info, .b2{
+    background: #bababa;
+    padding: 20px; 
+}
+.infop{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    grid-area:infop;
+}
+.tope, .b2, .info{
+    min-height: 50px;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 0;
+    border-end-end-radius: 0;
+}
+.tope, .b2, .titulo{
+    padding:0;
+}
+.extras{
+    grid-area:ex;
+}
+.tope{grid-area:tope;}
+.programacion{grid-area:t2;}
+.b2{padding:0;grid-area: b2;}
+.framework{grid-area:t3;}
+.iA{grid-area:iA;}
+.iB{grid-area:iB;}
+.ic{grid-area:ic;}
+.sidebar{ 
+    text-align: center;
+    min-height:100px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    grid-area: sidebar;
+}
+.tope{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.footer{
+    grid-area:footer;
+}
+.izq, .titulo h2{
+    float: left;
+    padding-left:2rem;
+}
+.der{
+    float: right;
+    padding-right:2rem;
+}
+.infop > div:nth-child(1){
+    background:#bababa;
+}
+/*/CONTENIDO DE CUADROS/////////////////////////////////////////////////*/
+.seccion, .reglon, .items, .r2, .titu{
+    color:#fff;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-around;
+    align-items:center;
+    padding: 5px;
+}
+.reglon{
+    background:#4b5666;
+    border-radius:1rem;
+    padding: 0;
+}
+.seccion{
+    margin: 1rem;
+    border: 5px solid #2c343f;
+    border-radius: 1rem;
+    background:#7085a0;
+}
+.items, .r2{
+    background:#2c2b3a;
+    border-radius: 1rem;
+}
+.reglon, .r2{
+    flex-basis: 100%;
+}
+.titu{
+    width:29%;
+}
+.items{
+    width:67%;
+}
+.r2, .reglon{
+    margin:5px;
+}
+.es{
+    background:#2c343f;
+    padding:10px;
+}
+/*//RESPONSIVE/////////////////////////////////////////////////*/
+@media screen and (max-width: 768px){
+     body{
+        background:rgb(56, 69, 88);
+        padding:0;
+    }
+    .contenedor{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(11, auto);
+        grid-template-areas:
+                     "sidebar sidebar sidebar"                    
+                     "infop infop infop"
+                     "tope tope tope"
+                     "t2 t2 t2"
+                     "iA iA iA"
+                     "t3 t3 t3"
+                     "iB iB iB"
+                     "ex ex ex"
+                     "ic ic ic"
+                     "b2 b2 b2"
+                     "footer footer footer";
+                     background:#bababa;
+                     min-width: 376px; 
+    }
+     .contenedor .tope, .b2, .info{
+        min-height: 2rem;
+        border-radius: 0; 
+        padding:0;
+        margin: 0; 
+    } 
+    .contenedor .tope{
+        height:10px;
+    }
+    .infop{
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        padding-bottom: 1rem;
+    }
+    
+    .titulo, .titu, .items, .extras{
+        width: 100%;    
+    }
+    .titulo h2, .footer h3{
+        text-align:center;
+        padding:0;
+        float:none;
+    }
+    .info{
+        padding:0;
+        margin: 0;
+        flex: 1;
+    }
+    .izq{
+        padding-left:10px;
+    }
+    .der{
+        padding-right: 10px;
+    }
+}
