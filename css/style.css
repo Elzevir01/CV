@@ -4,7 +4,6 @@
 }
 body{  
     background:#000;
-    color:black;
     font-family: 'Roboto', sans-serif;
     padding:5px;
 }
@@ -109,7 +108,7 @@ grid-template-areas: "sidebar tope tope tope tope"
     border-radius: 1rem;
     background:#7085a0;
 }
-.items, .r2{
+.items, .r2, .es{
     background:#2c2b3a;
     border-radius: 1rem;
 }
@@ -125,11 +124,10 @@ grid-template-areas: "sidebar tope tope tope tope"
 .r2, .reglon{
     margin:5px;
 }
-.es{
-    background:#2c343f;
+.es{  
     padding:10px;
 }
-/*//RESPONSIVE/////////////////////////////////////////////////*/
+/*/////RESPONSIVE/////////////////////////////////////////////////*/
 @media screen and (max-width: 768px){
      body{
         background:rgb(56, 69, 88);
