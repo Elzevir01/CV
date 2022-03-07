@@ -4,7 +4,7 @@
 }
 body{  
     background:#000;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arvo', sans-serif;
     padding:5px;
 }
 .contenedor{
@@ -86,6 +86,11 @@ grid-template-areas: "sidebar tope tope tope tope"
 .der{
     float: right;
     padding-right:2rem;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 /*/CONTENIDO DE CUADROS/////////////////////////////////////////////////*/
 .seccion, .reglon, .items, .r2, .titu, .infop{
