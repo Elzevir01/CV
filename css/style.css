@@ -69,7 +69,8 @@ grid-template-areas: "sidebar tope tope tope tope"
     min-height:100px;
     display:flex;
     align-items:center;
-    justify-content:center;
+    flex-direction: column;
+    justify-content: space-around;
     grid-area: sidebar;
 }
 .tope{
@@ -87,11 +88,21 @@ grid-template-areas: "sidebar tope tope tope tope"
     float: right;
     padding-right:2rem;
 }
-.sidebar{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+#foto{
+    height:10rem;
+    border-radius:10rem;
+    border:5px solid #bababa;
 }
+.lateraltop{
+    padding:2rem;
+    width:100%;
+    height:30%;
+}
+.lateralbot{
+    width:100%;
+    height:70%;
+}
+
 /*/CONTENIDO DE CUADROS/////////////////////////////////////////////////*/
 .seccion, .reglon, .items, .r2, .titu, .infop{
     color:#fff;
@@ -154,7 +165,7 @@ grid-template-areas: "sidebar tope tope tope tope"
                      "b2 b2 b2"
                      "footer footer footer";
                      background:#bababa;
-                     min-width: 376px; 
+                     min-width: 367px; 
     }
      .contenedor .tope, .b2, .info{
         min-height: 2rem;
