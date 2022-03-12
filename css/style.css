@@ -77,9 +77,10 @@ grid-template-areas: "sidebar tope tope tope tope"
     height:30%;
 }
 .lateralbot{
-    display: flex;
-    justify-content:center;
-    align-items:flex-start;
+    display:flex;
+    flex-flow:column;
+    justify-content:space-around;
+    align-items:center;
     width:100%;
     height:70%;
 }
@@ -101,15 +102,22 @@ grid-template-areas: "sidebar tope tope tope tope"
 #foto{
     height:10rem;
     border-radius:10rem;
-    border:5px solid #bababa;
+    border:0.3rem solid #bababa;
 }
 
-.git{
+.link{
     display:flex;
     align-items:center;
-    flex-direction: column;
+    flex-direction:column;
     width:50%;
     background: #bababa;
+    border-radius:1rem;
+    border:0.3rem solid #bababa;
+}
+#QR{
+    width:100%;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
 }
 
 /*/CONTENIDO DE CUADROS/////////////////////////////////////////////////*/
@@ -208,5 +216,14 @@ grid-template-areas: "sidebar tope tope tope tope"
     }
     .der{
         padding-right: 10px;
+    }
+    #QR, .link {
+        visibility:hidden;
+    }
+    .lateralbot{
+        max-height: 3rem;
+    }
+    .lateraltop{
+        height: 12rem;
     }
 }
