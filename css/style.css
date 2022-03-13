@@ -103,6 +103,7 @@ grid-template-areas: "sidebar tope tope tope tope"
     height:10rem;
     border-radius:10rem;
     border:0.3rem solid #bababa;
+    margin:2rem;
 }
 
 .link{
@@ -113,7 +114,14 @@ grid-template-areas: "sidebar tope tope tope tope"
     background: #bababa;
     border-radius:1rem;
     border:0.3rem solid #bababa;
+    /* font-size: 0.9vw; */
+
 }
+.link a{
+    text-align: center;
+    width:100%;
+}
+
 #QR{
     width:100%;
     border-top-right-radius: 1rem;
@@ -161,6 +169,11 @@ grid-template-areas: "sidebar tope tope tope tope"
     padding:10px;
 }
 /*/////RESPONSIVE/////////////////////////////////////////////////*/
+@media screen and (max-width: 845px){
+    .items{
+        width:100%;
+    }
+}
 @media screen and (max-width: 768px){
      body{
         background:rgb(56, 69, 88);
@@ -182,7 +195,7 @@ grid-template-areas: "sidebar tope tope tope tope"
                      "b2 b2 b2"
                      "footer footer footer";
                      background:#bababa;
-                     min-width: 367px; 
+                     /* min-width: 367px;  */
     }
      .contenedor .tope, .b2, .info{
         min-height: 2rem;
