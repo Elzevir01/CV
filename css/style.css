@@ -137,7 +137,10 @@ grid-template-areas: "sidebar tope tope tope tope"
     align-items:center;
     padding: 5px;
 }
+.es{
 
+    text-align: left;
+}
 .reglon{
     background:#4b5666;
     border-radius:1rem;
@@ -166,6 +169,9 @@ grid-template-areas: "sidebar tope tope tope tope"
     margin:5px;
 }
 .es{  
+    display:grid;
+    flex-flow:row;
+    justify-content:left;
     padding:10px;
 }
 /*/////RESPONSIVE/////////////////////////////////////////////////*/
