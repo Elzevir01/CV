@@ -8,7 +8,6 @@ body{
     padding:5px;
 }
 .contenedor{
-width:100%;
 min-width: 376px; 
 display:grid;
 grid-template-columns: repeat(5, 1fr);
@@ -37,7 +36,7 @@ grid-template-areas: "sidebar tope tope tope tope"
     padding-bottom: 1rem;
     grid-area:infop;
 }
-.par, .impar{
+.par, .impar, .lateralbot, .lateraltop, .contenedor{
     width:100%;
 }
 .impar{
@@ -73,7 +72,6 @@ grid-template-areas: "sidebar tope tope tope tope"
     display: flex;
     justify-content: center;
     align-items: center;
-    width:100%;
     height:30%;
 }
 .lateralbot{
@@ -81,7 +79,6 @@ grid-template-areas: "sidebar tope tope tope tope"
     flex-flow:column;
     justify-content:space-around;
     align-items:center;
-    width:100%;
     height:70%;
 }
 .tope{
@@ -105,7 +102,6 @@ grid-template-areas: "sidebar tope tope tope tope"
     border:0.3rem solid #bababa;
     margin:2rem;
 }
-
 .link{
     display:flex;
     align-items:center;
@@ -114,21 +110,16 @@ grid-template-areas: "sidebar tope tope tope tope"
     background: #bababa;
     border-radius:1rem;
     border:0.3rem solid #bababa;
-    /* font-size: 0.9vw; */
-
 }
 .link a{
     text-align: center;
     width:100%;
 }
-
 #QR{
     width:100%;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
+    border-radius: 1rem;
 }
-
-/*/CONTENIDO DE CUADROS/////////////////////////////////////////////////*/
+/*/CONTENIDO DE CUADROS////////////////////////////*/
 .seccion, .reglon, .items, .r2, .titu, .infop{
     color:#fff;
     display:flex;
@@ -138,7 +129,6 @@ grid-template-areas: "sidebar tope tope tope tope"
     padding: 5px;
 }
 .es{
-
     text-align: left;
 }
 .reglon{
@@ -173,6 +163,9 @@ grid-template-areas: "sidebar tope tope tope tope"
     flex-flow:row;
     justify-content:left;
     padding:10px;
+}
+.es p{
+    padding-bottom: 0.3rem;
 }
 /*/////RESPONSIVE/////////////////////////////////////////////////*/
 @media screen and (max-width: 845px){
