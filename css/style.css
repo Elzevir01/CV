@@ -233,7 +233,7 @@ grid-template-areas: "sidebar tope tope tope tope"
         visibility:hidden;
     }
     .lateralbot{
-        max-height: 3rem;
+        max-height: 0rem;
     }
     .lateraltop{
         height: 12rem;
