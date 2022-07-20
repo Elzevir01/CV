@@ -2,13 +2,14 @@
     margin:0;
     padding:0;
 }
+
 body{  
     background:#000;
     font-family: 'Arvo', sans-serif;
     padding:5px;
 }
 .contenedor{
-min-width: 376px; 
+min-width: 380px; 
 display:grid;
 grid-template-columns: repeat(5, 1fr);
 grid-template-rows: repeat(10, auto);
@@ -102,7 +103,7 @@ grid-template-areas: "sidebar tope tope tope tope"
     border:0.3rem solid #bababa;
     margin:2rem;
 }
-.link{
+.linkQR{
     display:flex;
     align-items:center;
     flex-direction:column;
@@ -110,10 +111,23 @@ grid-template-areas: "sidebar tope tope tope tope"
     background: #bababa;
     border-radius:1rem;
     border:0.3rem solid #bababa;
+    transition: 1s;
 }
-.link a{
+.linkQR:hover{
+    background: #7085a0;
+}
+.linkQR a{  
     text-align: center;
     width:100%;
+}
+.lin:link, .lin:visited{
+    color:darkcyan; 
+}
+.lin{
+    transition: 1s;
+}
+.lin:hover{
+    color:aqua;
 }
 #QR{
     width:100%;
@@ -167,6 +181,7 @@ grid-template-areas: "sidebar tope tope tope tope"
 .es p{
     padding-bottom: 0.3rem;
 }
+
 /*/////RESPONSIVE/////////////////////////////////////////////////*/
 @media screen and (max-width: 845px){
     .items{
@@ -179,6 +194,7 @@ grid-template-areas: "sidebar tope tope tope tope"
         padding:0;
     }
     .contenedor{
+        min-width: 380px;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(11, auto);
         grid-template-areas:
@@ -229,7 +245,7 @@ grid-template-areas: "sidebar tope tope tope tope"
     .der{
         padding-right: 10px;
     }
-    #QR, .link {
+    #QR, .linkQR {
         visibility:hidden;
     }
     .lateralbot{
