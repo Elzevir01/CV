@@ -2,7 +2,6 @@
     margin:0;
     padding:0;
 }
-
 body{  
     background:#000;
     font-family: 'Arvo', sans-serif;
@@ -245,8 +244,9 @@ grid-template-areas: "sidebar tope tope tope tope"
     .der{
         padding-right: 10px;
     }
-    #QR, .linkQR {
+    #QR, .linkQR, .linkQR a, .linkQR p{
         visibility:hidden;
+        transition: 0s;
     }
     .lateralbot{
         max-height: 0rem;
