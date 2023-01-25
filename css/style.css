@@ -8,7 +8,7 @@ body{
     padding:5px;
 }
 .contenedor{
-min-width: 380px; 
+min-width: 428px; 
 display:grid;
 grid-template-columns: repeat(5, 1fr);
 grid-template-rows: repeat(10, auto);
@@ -193,7 +193,7 @@ grid-template-areas: "sidebar tope tope tope tope"
         padding:0;
     }
     .contenedor{
-        min-width: 380px;
+        min-width: 428px;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(11, auto);
         grid-template-areas:
