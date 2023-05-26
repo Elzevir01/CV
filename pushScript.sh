@@ -13,10 +13,5 @@ git add .
 # Commit con el argumento de linea de comando
 git commit -m "$1"
 
-# Configurar el token como credencial para Git
-git config --global credential.helper 'store --file ~/.git-credentials'
-echo "https://$usuario:$token" > ~/.git-credentials
-
-
 # Ejecutar el comando "git push" con el usuario y la contraseña
 git push -u origin master
