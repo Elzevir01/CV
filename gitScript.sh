@@ -14,4 +14,4 @@ git add .
 git commit -m "$1"
 
 # Ejecutar el comando "git push" con el usuario y la contraseña
-echo git push -u "$usuario" master | "$contrasena"
+git push -u "$usuario" master | "$contrasena"
