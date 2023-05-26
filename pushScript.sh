@@ -13,5 +13,8 @@ git add .
 # Commit con el argumento de linea de comando
 git commit -m "$1"
 
+# Establecer el token como credencial para Git
+git config --global credential.helper store <<<"https://$usuario:$token@github.com"
+
 # Ejecutar el comando "git push" con el usuario y la contraseña
-git push https://$usuario:$contrasena@github.com/$usuario/CV.git
+git push -u origin master
