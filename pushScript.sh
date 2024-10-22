@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Nota: ejecutar con Terminal: bash pushScript.sh [comentario del commit]
+
 # Agrega todos los archivos a git
 git add .
 
