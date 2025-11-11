@@ -96,6 +96,29 @@ grid-template-areas: "sidebar tope tope tope tope"
     float: right;
     padding-right:2rem;
 }
+.reglonIzqCenDer{
+    display:grid;
+    width:100%;
+    padding-left:3rem;
+    padding-right:3rem;
+    /* align-items: center; */
+    justify-content: space-between;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas: "iz ce de"
+}
+.iz{
+    grid-area:iz;
+    justify-self: start;
+}
+.ce{
+    grid-area:ce;
+    justify-self: center;
+}
+.de{
+    grid-area:de;
+    justify-self: end;
+}
+
 #foto{
     height:10rem;
     border-radius:10rem;
@@ -163,10 +186,11 @@ grid-template-areas: "sidebar tope tope tope tope"
     flex-basis: 100%;
 }
 .titu{
-    width:29%;
+    width:38%;
 }
 .items{
-    width:67%;
+   /*  width:67%; */
+   width: 58%;
 }
 .r2, .reglon{
     margin:5px;
